@@ -1,0 +1,115 @@
+:root {
+  --bg-light: linear-gradient(to right, #e0f7fa, #e1bee7);
+  --bg-dark: #1e1e2f;
+  --text-light: #333;
+  --text-dark: #f1f1f1;
+  --note-light: white;
+  --note-dark: #2e2e42;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: var(--bg-light);
+  color: var(--text-light);
+  transition: all 0.3s ease-in-out;
+}
+
+.dark-mode {
+  background: var(--bg-dark);
+  color: var(--text-dark);
+}
+
+.container {
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5em;
+}
+
+.mode-toggle {
+  text-align: right;
+  margin-bottom: 10px;
+}
+
+.mode-toggle button {
+  margin-left: 10px;
+  background-color: #444;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+textarea {
+  width: 100%;
+  height: 400px;
+  padding: 10px;
+  font-size: 1.1em;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  resize: vertical;
+}
+
+button {
+  padding: 10px 15px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: #6200ea;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #3700b3;
+}
+
+#notes-container {
+  margin-top: 20px;
+}
+
+.note {
+  background-color: var(--note-light);
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, background 0.3s;
+}
+
+.dark-mode .note {
+  background-color: var(--note-dark);
+}
+
+.note:hover {
+  transform: scale(1.02);
+}
+
+.note-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.note-controls span {
+  margin: 0 4px;
+  padding: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.note-controls img {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}

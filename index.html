@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Note Pad</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/4205/4205873.png">
+   
+</head>
+<body>
+  <div class="container">
+    <div class="mode-toggle">
+      <button onclick="setMode('light')">Light Mode</button>
+      <button onclick="setMode('dark')">Dark Mode</button>
+    </div>
+    <h1>📝 Welcome to My Notepad</h1>
+    <textarea id="text-area" placeholder="Write your notes here..."></textarea>
+    <br>
+    <button onclick="addNote()">Add Note</button>
+    <button onclick="clearNote()">Clear</button>
+    <button onclick="undoNote()">Undo</button>
+    <button onclick="redoNote()">Redo</button>
+    <button onclick="selectAllText()">Select All</button>
+    <button onclick="pasteClipboard()">Paste</button>
+    <button id="count">Letters Count: 0</button>
+
+    <section id="notes-container"></section>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
