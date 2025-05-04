@@ -1,4 +1,4 @@
-// const textArea = document.getElementById("text-area");
+const textArea = document.getElementById("text-area");
 const countDisplay = document.getElementById("count");
 const notesContainer = document.getElementById("notes-container");
 let history = [], redoStack = [];
